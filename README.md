@@ -4,6 +4,8 @@
 
 ---
 
+[▶️ Vídeo de apresentação](https://youtu.be/VqWkbSosoIc)
+
 ## 📌 Visão Geral do Projeto
 
 Este projeto implementa um sistema de **Adaptive RAG** voltado para responder perguntas complexas e *cross-source* sobre produção científica, editais de fomento e conformidade ética em pesquisa acadêmica.
