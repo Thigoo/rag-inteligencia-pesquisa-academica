@@ -1,0 +1,32 @@
+# Ambiente e chaves
+.env
+.env.local
+
+# Ambiente vistual do python
+.venv
+
+# Dados brutos coletados (Regra: data/raw/ não vai para o Git)
+data/raw/
+
+# Índices locais e caches de embedding
+index/
+*.pkl
+*.index
+
+# Logs estruturados de pipeline
+logs/
+*.jsonl
+
+# Python cache e testes
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE e sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

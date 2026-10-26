@@ -1,0 +1,262 @@
+[
+  {
+    "chunk_id": "norm_cns510_art1",
+    "content": "Art. 1º Pesquisa envolvendo seres humanos deve observar princípios éticos e regulamentação aplicável.",
+    "metadata": {
+      "chunk_id": "norm_cns510_art1",
+      "doc_type": "json",
+      "source_file": "raw/v1/editais_normativo/data.json",
+      "base_id": "editais_normativo",
+      "natureza": "normativa",
+      "sensitivity": "publico",
+      "campo_vigencia": "2022-11-10"
+    }
+  },
+  {
+    "chunk_id": "norm_cns510_art2",
+    "content": "Art. 2º O projeto de pesquisa deve apresentar objetivos, metodologia e procedimentos de análise.",
+    "metadata": {
+      "chunk_id": "norm_cns510_art2",
+      "doc_type": "json",
+      "source_file": "raw/v1/editais_normativo/data.json",
+      "base_id": "editais_normativo",
+      "natureza": "normativa",
+      "sensitivity": "publico",
+      "campo_vigencia": "2022-11-10"
+    }
+  },
+  {
+    "chunk_id": "norm_cns510_art3",
+    "content": "Art. 3º A pesquisa deve garantir proteção aos participantes e tratamento adequado das informações.",
+    "metadata": {
+      "chunk_id": "norm_cns510_art3",
+      "doc_type": "json",
+      "source_file": "raw/v1/editais_normativo/data.json",
+      "base_id": "editais_normativo",
+      "natureza": "normativa",
+      "sensitivity": "publico",
+      "campo_vigencia": "2022-11-10"
+    }
+  },
+  {
+    "chunk_id": "norm_cns510_art4",
+    "content": "Art. 4º Os procedimentos éticos devem ser observados durante todas as etapas da pesquisa.",
+    "metadata": {
+      "chunk_id": "norm_cns510_art4",
+      "doc_type": "json",
+      "source_file": "raw/v1/editais_normativo/data.json",
+      "base_id": "editais_normativo",
+      "natureza": "normativa",
+      "sensitivity": "publico",
+      "campo_vigencia": "2022-11-10"
+    }
+  },
+  {
+    "chunk_id": "est_work_faperj_101",
+    "content": "Projeto FAPERJ 101: estudo sobre saúde digital. Ano: 2023. Financiamento: R$ 120.000.",
+    "metadata": {
+      "chunk_id": "est_work_faperj_101",
+      "doc_type": "json",
+      "source_file": "raw/v1/producao_estruturada/data.json",
+      "base_id": "producao_estruturada",
+      "natureza": "estruturada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2023"
+    }
+  },
+  {
+    "chunk_id": "est_work_faperj_102",
+    "content": "Projeto FAPERJ 102: pesquisa em inteligência artificial. Ano: 2024. Financiamento: R$ 200.000.",
+    "metadata": {
+      "chunk_id": "est_work_faperj_102",
+      "doc_type": "json",
+      "source_file": "raw/v1/producao_estruturada/data.json",
+      "base_id": "producao_estruturada",
+      "natureza": "estruturada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2024"
+    }
+  },
+  {
+    "chunk_id": "est_work_faperj_103",
+    "content": "Artigo sobre genômica publicado em 2022. Autor: Ana Silva. Citações: 35.",
+    "metadata": {
+      "chunk_id": "est_work_faperj_103",
+      "doc_type": "json",
+      "source_file": "raw/v1/producao_estruturada/data.json",
+      "base_id": "producao_estruturada",
+      "natureza": "estruturada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2022"
+    }
+  },
+  {
+    "chunk_id": "est_work_faperj_104",
+    "content": "Artigo sobre epidemiologia publicado em 2024. Autor: Bruno Costa. Citações: 18.",
+    "metadata": {
+      "chunk_id": "est_work_faperj_104",
+      "doc_type": "json",
+      "source_file": "raw/v1/producao_estruturada/data.json",
+      "base_id": "producao_estruturada",
+      "natureza": "estruturada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2024"
+    }
+  },
+  {
+    "chunk_id": "conv_proto_4821_r1",
+    "content": "Parecer interno: o projeto apresenta documentação suficiente para análise técnica.",
+    "metadata": {
+      "chunk_id": "conv_proto_4821_r1",
+      "doc_type": "json",
+      "source_file": "raw/v1/pareceres_conversacional/data.json",
+      "base_id": "pareceres_conversacional",
+      "natureza": "conversacional",
+      "sensitivity": "interno",
+      "campo_vigencia": "2022-11-10"
+    }
+  },
+  {
+    "chunk_id": "conv_proto_4821_r2",
+    "content": "Parecer interno: os dados apresentados foram considerados suficientes para a avaliação.",
+    "metadata": {
+      "chunk_id": "conv_proto_4821_r2",
+      "doc_type": "json",
+      "source_file": "raw/v1/pareceres_conversacional/data.json",
+      "base_id": "pareceres_conversacional",
+      "natureza": "conversacional",
+      "sensitivity": "interno",
+      "campo_vigencia": "2022-11-10"
+    }
+  },
+  {
+    "chunk_id": "conv_proto_4821_r3",
+    "content": "Comunicação interna: o cronograma da pesquisa foi atualizado para o próximo semestre.",
+    "metadata": {
+      "chunk_id": "conv_proto_4821_r3",
+      "doc_type": "json",
+      "source_file": "raw/v1/pareceres_conversacional/data.json",
+      "base_id": "pareceres_conversacional",
+      "natureza": "conversacional",
+      "sensitivity": "interno",
+      "campo_vigencia": "2023-06-15"
+    }
+  },
+  {
+    "chunk_id": "conv_proto_4821_r4",
+    "content": "Nota interna: informações pessoais presentes no parecer devem permanecer protegidas.",
+    "metadata": {
+      "chunk_id": "conv_proto_4821_r4",
+      "doc_type": "json",
+      "source_file": "raw/v1/pareceres_conversacional/data.json",
+      "base_id": "pareceres_conversacional",
+      "natureza": "conversacional",
+      "sensitivity": "interno",
+      "campo_vigencia": "2024-01-20"
+    }
+  },
+  {
+    "chunk_id": "agr_topic_ia_saude",
+    "content": "Tópico: Inteligência Artificial na Saúde. Obras: 12500. Citações: 85400.",
+    "metadata": {
+      "chunk_id": "agr_topic_ia_saude",
+      "doc_type": "json",
+      "source_file": "raw/v1/metricas_agregada/data.json",
+      "base_id": "metricas_agregada",
+      "natureza": "agregada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2024"
+    }
+  },
+  {
+    "chunk_id": "agr_topic_saude_digital",
+    "content": "Tópico: Saúde Digital. Obras: 8400. Citações: 51000.",
+    "metadata": {
+      "chunk_id": "agr_topic_saude_digital",
+      "doc_type": "json",
+      "source_file": "raw/v1/metricas_agregada/data.json",
+      "base_id": "metricas_agregada",
+      "natureza": "agregada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2024"
+    }
+  },
+  {
+    "chunk_id": "agr_topic_genomica",
+    "content": "Tópico: Genômica. Obras: 6200. Citações: 47000.",
+    "metadata": {
+      "chunk_id": "agr_topic_genomica",
+      "doc_type": "json",
+      "source_file": "raw/v1/metricas_agregada/data.json",
+      "base_id": "metricas_agregada",
+      "natureza": "agregada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2024"
+    }
+  },
+  {
+    "chunk_id": "agr_topic_ia",
+    "content": "Tópico: Inteligência Artificial. Obras: 25000. Citações: 160000.",
+    "metadata": {
+      "chunk_id": "agr_topic_ia",
+      "doc_type": "json",
+      "source_file": "raw/v1/metricas_agregada/data.json",
+      "base_id": "metricas_agregada",
+      "natureza": "agregada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2024"
+    }
+  },
+  {
+    "chunk_id": "est_work_faperj_105",
+    "content": "Artigo sobre inteligência artificial na saúde publicado em 2023. Autor: Carla Souza. Citações: 42.",
+    "metadata": {
+      "chunk_id": "est_work_faperj_105",
+      "doc_type": "json",
+      "source_file": "raw/v1/producao_estruturada/data.json",
+      "base_id": "producao_estruturada",
+      "natureza": "estruturada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2023"
+    }
+  },
+  {
+    "chunk_id": "est_work_faperj_106",
+    "content": "Projeto de pesquisa em obesidade publicado em 2024. Financiamento: R$ 80.000.",
+    "metadata": {
+      "chunk_id": "est_work_faperj_106",
+      "doc_type": "json",
+      "source_file": "raw/v1/producao_estruturada/data.json",
+      "base_id": "producao_estruturada",
+      "natureza": "estruturada",
+      "sensitivity": "publico",
+      "campo_vigencia": "2024"
+    }
+  },
+  {
+    "chunk_id": "conv_proto_4821_r5",
+    "content": "Parecer interno: recomenda-se manter o acesso às informações restrito à equipe autorizada.",
+    "metadata": {
+      "chunk_id": "conv_proto_4821_r5",
+      "doc_type": "json",
+      "source_file": "raw/v1/pareceres_conversacional/data.json",
+      "base_id": "pareceres_conversacional",
+      "natureza": "conversacional",
+      "sensitivity": "interno",
+      "campo_vigencia": "2024-05-10"
+    }
+  },
+  {
+    "chunk_id": "conv_proto_4821_r6",
+    "content": "Registro interno: a documentação do projeto foi revisada pela equipe responsável.",
+    "metadata": {
+      "chunk_id": "conv_proto_4821_r6",
+      "doc_type": "json",
+      "source_file": "raw/v1/pareceres_conversacional/data.json",
+      "base_id": "pareceres_conversacional",
+      "natureza": "conversacional",
+      "sensitivity": "interno",
+      "campo_vigencia": "2024-07-01"
+    }
+  }
+]

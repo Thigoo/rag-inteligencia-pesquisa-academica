@@ -1,0 +1,80 @@
+scenario_id: cenario-3-pesquisa-academica
+version: "2026-09-18"
+description: "Corpus para Inteligência sobre Pesquisa Acadêmica (Editais de Fomento/Ética, Metadados OpenAlex, Pareceres de Peer Review e Métricas Bibliométricas)"
+
+bases:
+  - base_id: editais_normativo
+    natureza: normativa
+    fonte: "Editais FAPERJ / CNPq e Resoluções CNS/CONEP/CAPES"
+    acesso:
+      tipo: arquivo_local
+      arquivos_locais:
+        - "data/raw/sintetico/resolucao_cns_510_2016.txt"
+        - "data/raw/sintetico/resolucao_cns_466_2012.txt"
+        - "data/raw/sintetico/edital_faperj_emergentes_2022.txt"
+        - "data/raw/sintetico/edital_cnpq_bolsas_produtividade_2023.txt"
+        - "data/raw/sintetico/portaria_capes_quadrienal_2024.txt"
+      rate_limit_seg: 1.0
+    selecao_deterministica: true
+    volume_alvo: 5
+    formato: txt
+    licenca: "Domínio Público / Governo Federal & Estadual"
+    sensitivity_default: publico
+    campo_vigencia: "data_publicacao"
+    chunking_sugerido: "Split por artigos, seções e cláusulas com overlap"
+    metadados_extras: [orgao_emissor, numero_norma, ano, tema]
+
+  - base_id: producao_estruturada
+    natureza: estruturada
+    fonte: "OpenAlex REST API & Datasets Estruturados"
+    acesso:
+      tipo: arquivo_local
+      arquivos_locais:
+        - "data/raw/v1/producao_estruturada/data.json"
+        - "data/raw/sintetico/works_saude_digital.json"
+        - "data/raw/sintetico/works_faperj_grants.json"
+      rate_limit_seg: 1.0
+    selecao_deterministica: true
+    volume_alvo: 3
+    formato: json
+    licenca: "CC0 - OpenAlex Data"
+    sensitivity_default: publico
+    campo_vigencia: "publication_year"
+    chunking_sugerido: "1 trabalho = 1 chunk, serializado em linguagem natural com metadados estruturados"
+    metadados_extras: [doi, publication_year, authors, institutions, funders, cited_by_count]
+
+  - base_id: pareceres_conversacional
+    natureza: conversacional
+    fonte: "Base Sintética de Peer Review e Pareceres Editoriais"
+    acesso:
+      tipo: arquivo_local
+      arquivos_locais:
+        - "data/raw/sintetico/pareceres_peer_review.json"
+        - "data/raw/sintetico/pareceres_recursos_fomento.json"
+      rate_limit_seg: 0.5
+    selecao_deterministica: true
+    volume_alvo: 2
+    formato: json
+    licenca: "Uso Acadêmico Interno - Sintético"
+    sensitivity_default: interno
+    campo_vigencia: "data_parecer"
+    chunking_sugerido: "1 parecer completo por chunk com metadado de rodada"
+    metadados_extras: [protocolo_id, decisao, rodada, status_anonimato]
+
+  - base_id: metricas_agregada
+    natureza: agregada
+    fonte: "Indicadores Bibliométricos e Tópicos Acadêmicos OpenAlex"
+    acesso:
+      tipo: arquivo_local
+      arquivos_locais:
+        - "data/raw/v1/metricas_agregada/data.json"
+        - "data/raw/sintetico/topics_inteligencia_artificial.json"
+      rate_limit_seg: 1.0
+    selecao_deterministica: true
+    volume_alvo: 2
+    formato: json
+    licenca: "CC0 - OpenAlex"
+    sensitivity_default: publico
+    campo_vigencia: "ano_coleta"
+    chunking_sugerido: "1 tópico/indicador por chunk com estatísticas consolidadas"
+    metadados_extras: [topic_id, works_count, cited_by_count, subfield, field]

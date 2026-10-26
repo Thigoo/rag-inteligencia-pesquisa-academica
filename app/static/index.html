@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligência sobre Pesquisa Acadêmica · Adaptive RAG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-layout">
+    <!-- Sidebar / Painel Lateral -->
+    <aside class="sidebar">
+      <div class="brand-header">
+        <div class="brand-icon">🎓</div>
+        <div>
+          <h1 class="brand-title">Pesquisa RAG</h1>
+          <span class="brand-subtitle">Cenário 3 · PUC-Rio ECOA</span>
+        </div>
+      </div>
+
+      <div class="status-card">
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-text">Pipeline Online</span>
+        </div>
+        <div class="status-meta">
+          <div class="meta-item">
+            <span class="meta-label">Total Indexado:</span>
+            <span class="meta-value" id="total-chunks-val">671 chunks</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">LLM Gerador:</span>
+            <span class="meta-value">Qwen-3-8B</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Embeddings:</span>
+            <span class="meta-value">Qwen-0.6B (1024d)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="section-title">As 4 Bases do Cenário</h3>
+        <ul class="bases-list">
+          <li class="base-badge norm">
+            <span class="base-icon">📜</span>
+            <div class="base-info">
+              <strong>Normativa</strong>
+              <small>Editais & Resoluções CEP</small>
+            </div>
+          </li>
+          <li class="base-badge est">
+            <span class="base-icon">🗂️</span>
+            <div class="base-info">
+              <strong>Estruturada</strong>
+              <small>OpenAlex Works & Grants</small>
+            </div>
+          </li>
+          <li class="base-badge conv">
+            <span class="base-icon">💬</span>
+            <div class="base-info">
+              <strong>Conversacional</strong>
+              <small>Peer Review & Pareceres</small>
+            </div>
+          </li>
+          <li class="base-badge agr">
+            <span class="base-icon">📊</span>
+            <div class="base-info">
+              <strong>Agregada</strong>
+              <small>Indicadores Bibliométricos</small>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="section-title">Perguntas Rápidas (Personas)</h3>
+        <div class="quick-questions">
+          <button class="quick-btn" data-query="Quais trabalhos publicados pelo nosso programa se enquadram em saúde digital e tiveram financiamento?">
+            <span class="persona-tag ana">Profa. Ana</span>
+            <span>Saúde digital com fomento (Cross-Source)</span>
+          </button>
+          <button class="quick-btn" data-query="meu estudo usa dados públicos anonimizados, preciso submeter ao CEP?">
+            <span class="persona-tag lucas">Lucas</span>
+            <span>Dados anonimizados precisam de CEP?</span>
+          </button>
+          <button class="quick-btn" data-query="Os projetos aprovados na chamada de 2022 produziram publicações alinhadas ao objetivo do edital?">
+            <span class="persona-tag beatriz">Beatriz</span>
+            <span>Edital FAPERJ 2022 vs Publicações</span>
+          </button>
+          <button class="quick-btn" data-query="Quem foi o parecerista anônimo que rejeitou o protocolo CEP 4821?">
+            <span class="persona-tag guard">Guardrail</span>
+            <span>Teste de quebra de duplo-cego (Recusa)</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="main-content">
+      <header class="top-nav">
+        <div class="nav-title-group">
+          <h2>Inteligência sobre Pesquisa Acadêmica</h2>
+          <p>Adaptive RAG com Roteamento por Tipo de Evidência e Guardrails de Anonimato</p>
+        </div>
+        <div class="pipeline-flow-badge">
+          <span>9 Estágios Ativos</span>
+          <span class="flow-pill">RRF k=60</span>
+        </div>
+      </header>
+
+      <!-- Messages Stream -->
+      <div class="chat-container" id="chat-stream">
+        <!-- Welcome Message -->
+        <div class="message-card system-welcome">
+          <div class="msg-avatar">🤖</div>
+          <div class="msg-body">
+            <h3>Bem-vindo ao Sistema de Inteligência Acadêmica</h3>
+            <p>Faça perguntas cruzando <strong>editais de fomento</strong>, <strong>produção científica (OpenAlex)</strong>, <strong>pareceres de revisão por pares</strong> e <strong>indicadores bibliométricos</strong>.</p>
+            <div class="guardrails-notice">
+              <span>🔒 <strong>Guardrails Ativos:</strong> E-mails de autores são mascarados automaticamente e o anonimato de revisores em duplo-cego é protegido contra vazamento.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Input Bar -->
+      <footer class="input-area">
+        <form id="rag-form" class="input-form">
+          <div class="input-wrapper">
+            <textarea id="query-input" rows="1" placeholder="Digite sua pergunta (ex: 'O dinheiro deste edital virou produção científica?')..." required></textarea>
+            <button type="submit" id="send-btn" class="send-button" title="Enviar Pergunta">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z"></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

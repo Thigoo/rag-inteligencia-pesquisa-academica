@@ -1,0 +1,180 @@
+{
+  "scenario_id": "cenario-3-pesquisa-academica",
+  "version": "v1",
+  "coletado_em": "2026-09-25T18:16:49.852211+00:00",
+  "manifest_hash": "sha256:1a99e0b556a5f9d1d037318a3a327fa1c7d3911f918008247eb356639941e2da",
+  "totais": {
+    "arquivos": 12,
+    "bytes": 3791113,
+    "falhas": 0
+  },
+  "por_base": [
+    {
+      "base_id": "editais_normativo",
+      "natureza": "normativa",
+      "arquivos": 5,
+      "formatos": {
+        "txt": 5
+      },
+      "bytes": 5507,
+      "volume_alvo": 5,
+      "divergencia_alvo": 0
+    },
+    {
+      "base_id": "producao_estruturada",
+      "natureza": "estruturada",
+      "arquivos": 3,
+      "formatos": {
+        "json": 3
+      },
+      "bytes": 3578445,
+      "volume_alvo": 3,
+      "divergencia_alvo": 0
+    },
+    {
+      "base_id": "pareceres_conversacional",
+      "natureza": "conversacional",
+      "arquivos": 2,
+      "formatos": {
+        "json": 2
+      },
+      "bytes": 4338,
+      "volume_alvo": 2,
+      "divergencia_alvo": 0
+    },
+    {
+      "base_id": "metricas_agregada",
+      "natureza": "agregada",
+      "arquivos": 2,
+      "formatos": {
+        "json": 2
+      },
+      "bytes": 202823,
+      "volume_alvo": 2,
+      "divergencia_alvo": 0
+    }
+  ],
+  "arquivos": [
+    {
+      "path": "raw\\v1\\editais_normativo\\resolucao_cns_510_2016.txt",
+      "base_id": "editais_normativo",
+      "tipo": "txt",
+      "bytes": 1146,
+      "sha256": "05469afaaa3f2f43c23ceac01dc376897f39161031bef10da00fa4d3acea79df",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\resolucao_cns_510_2016.txt",
+      "coletado_em": "2026-09-25T18:16:49.539370+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\editais_normativo\\resolucao_cns_466_2012.txt",
+      "base_id": "editais_normativo",
+      "tipo": "txt",
+      "bytes": 1005,
+      "sha256": "8f8b4a3006402aa1a9bcbcb9f6ea8d149074480ac5fc1adb09cc1f42650903a5",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\resolucao_cns_466_2012.txt",
+      "coletado_em": "2026-09-25T18:16:49.567139+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\editais_normativo\\edital_faperj_emergentes_2022.txt",
+      "base_id": "editais_normativo",
+      "tipo": "txt",
+      "bytes": 1370,
+      "sha256": "1677692f7ca912cfab90f31d3130de72800966dd319e6413427494fa1c362c8c",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\edital_faperj_emergentes_2022.txt",
+      "coletado_em": "2026-09-25T18:16:49.595058+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\editais_normativo\\edital_cnpq_bolsas_produtividade_2023.txt",
+      "base_id": "editais_normativo",
+      "tipo": "txt",
+      "bytes": 1074,
+      "sha256": "52b588e50188e5fb9a4e193c23ef6f5b7b94bd05a693c8ab4adcbde86fc21533",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\edital_cnpq_bolsas_produtividade_2023.txt",
+      "coletado_em": "2026-09-25T18:16:49.619119+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\editais_normativo\\portaria_capes_quadrienal_2024.txt",
+      "base_id": "editais_normativo",
+      "tipo": "txt",
+      "bytes": 912,
+      "sha256": "ab98ee77a527f246ce13b7af6c300561766bd206c7e13a0603ee2025e3c4591e",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\portaria_capes_quadrienal_2024.txt",
+      "coletado_em": "2026-09-25T18:16:49.629734+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\producao_estruturada\\data.json",
+      "base_id": "producao_estruturada",
+      "tipo": "json",
+      "bytes": 3576779,
+      "sha256": "05a521427f39012ed9c9bf82fe6cf45b13a19ec08ff57a0bfc5a1226e199e48f",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\v1\\producao_estruturada\\data.json",
+      "coletado_em": "2026-09-25T18:16:49.732769+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\producao_estruturada\\works_saude_digital.json",
+      "base_id": "producao_estruturada",
+      "tipo": "json",
+      "bytes": 830,
+      "sha256": "16c3fa7a662017cdb742f8115f26a336712ea35f01e43e6fe3cedc858af962d4",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\works_saude_digital.json",
+      "coletado_em": "2026-09-25T18:16:49.745966+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\producao_estruturada\\works_faperj_grants.json",
+      "base_id": "producao_estruturada",
+      "tipo": "json",
+      "bytes": 836,
+      "sha256": "c31eae9d9eef1357972de6d84781956d30ae25a69dff3de046f23f5ef341c9ec",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\works_faperj_grants.json",
+      "coletado_em": "2026-09-25T18:16:49.748250+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\pareceres_conversacional\\pareceres_peer_review.json",
+      "base_id": "pareceres_conversacional",
+      "tipo": "json",
+      "bytes": 3647,
+      "sha256": "93eda0007208e70363d1d3028e142cc0bd2800c60c9a80e805f871193fac5a21",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\pareceres_peer_review.json",
+      "coletado_em": "2026-09-25T18:16:49.784054+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\pareceres_conversacional\\pareceres_recursos_fomento.json",
+      "base_id": "pareceres_conversacional",
+      "tipo": "json",
+      "bytes": 691,
+      "sha256": "d012a983d512720682a2328160bd2ca308fd01aacbfc13d728a51db5120cb1f9",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\pareceres_recursos_fomento.json",
+      "coletado_em": "2026-09-25T18:16:49.803241+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\metricas_agregada\\data.json",
+      "base_id": "metricas_agregada",
+      "tipo": "json",
+      "bytes": 202122,
+      "sha256": "0fd01a6a119c17b6e443f8ac5e999f605210b56e8077401e51e359d7471b7036",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\v1\\metricas_agregada\\data.json",
+      "coletado_em": "2026-09-25T18:16:49.849744+00:00",
+      "status": "ok"
+    },
+    {
+      "path": "raw\\v1\\metricas_agregada\\topics_inteligencia_artificial.json",
+      "base_id": "metricas_agregada",
+      "tipo": "json",
+      "bytes": 701,
+      "sha256": "951e379d78f1afcf369a63e89813509ed0ec04f94cb01dc6d18a6bc68dea2e2c",
+      "origem": "D:\\Programação\\Serratec\\Residencia RAG\\ia-generativa-e-rag-desafio-grupo-5-Cenario-3-Inteligencia-sobre-Pesquisa-Academica\\data\\raw\\sintetico\\topics_inteligencia_artificial.json",
+      "coletado_em": "2026-09-25T18:16:49.852165+00:00",
+      "status": "ok"
+    }
+  ],
+  "falhas": []
+}
