@@ -1,7 +1,6 @@
 # Inteligência sobre Pesquisa Acadêmica · Adaptive RAG
 > **Grande Desafio · IA Generativa & RAG**  
 > **Residência TIC em Trilhas · PUC-Rio · Instituto ECOA**  
-> **Cenário 3 · Grupo 5**
 
 ---
 
@@ -52,7 +51,6 @@ flowchart TD
 ## 📂 Estrutura do Repositório
 
 ```text
-├── Acompanhamento/                  ← Relatos individuais e diários da equipe
 ├── README.md                        ← Instruções de execução e arquitetura
 ├── ARQUITETURA.md                   ← Plano técnico e matriz de responsabilidade
 ├── PERSONAS.md                      ← 3 personas, 9 perguntas e hipótese de erro
